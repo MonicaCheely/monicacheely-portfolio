@@ -1,86 +1,56 @@
-# Developer Portfolio Template 🚀
+# Monica Cheely Portfolio
 
-![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB) ![Node.js](https://img.shields.io/badge/Node%20js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white) ![npm](https://img.shields.io/badge/npm-CB3837?style=for-the-badge&logo=npm&logoColor=white) ![TypeScript](https://img.shields.io/badge/typescript-%23007ACC.svg?style=for-the-badge&logo=typescript&logoColor=white) ![JavaScript](https://img.shields.io/badge/JavaScript-323330?style=for-the-badge&logo=javascript&logoColor=F7DF1E) ![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white) ![Sass](https://img.shields.io/badge/Sass-CC6699?style=for-the-badge&logo=sass&logoColor=white)
+Welcome to my personal portfolio! This site showcases my projects, skills, and experience in software testing, cloud-native DevOps, AI/ML, robotics, and full-stack development.
 
-## What is this?
+**Live site:** [https://MonicaCheely.github.io/monicacheely-portfolio/](https://MonicaCheely.github.io/monicacheely-portfolio/)
 
-This simple portfolio template is designed to showcase your past projects, career history, skill sets, and more.
+---
 
-View the [Demo](https://yujisatojr.github.io/react-portfolio-template/).
+## About Me
 
-**This template is free to use, and no attribution is required.** You can fork or download this repository to customize it for your own use. Please don't forget to leave a ⭐ if you like this portfolio!
+I’m Monica Cheely, a technology enthusiast with experience in:  
+- **Data QA & Automation Testing**  
+- **Cloud-Native DevOps & CI/CD**  
+- **AI/ML & Robotics Projects**  
+- **Python, TypeScript, React, and SQL**  
+- **Program & Project Management**
 
-![screenshot](./src/assets//images/screenshot.png)
+I enjoy building solutions that combine automation, data, and innovation. This portfolio demonstrates my technical skills and showcases projects I’m actively developing and planning.  
 
-## Features
+---
 
-✅ Open source (free to use, no attribution required)  
-✅ Responsive design & mobile-friendly  
-✅ Supports both dark and light modes  
-✅ Highly customizable multi-component layout  
-✅ Built with modern technologies (React, TypeScript, JavaScript, and SCSS)  
+## Projects
 
-## Quick Setup
+### **Duckiebot Autonomous Cloud-Native CI/CD Pipeline** *(Planning Stage)*  
+- Will design and implement **cloud-native CI/CD pipelines** for:  
+  - Data ingestion  
+  - ETL transformation  
+  - ML model training  
+- Goal: Automate **validation and deployment** of AI/ML components using simulated telemetry data.  
 
-1. Ensure you have [Node.js](https://nodejs.org/) installed. Check your installation by running:
+### **Upcoming Capstone Projects**  
+- **IBM DevOps & Software Engineering Certification Capstone** – Focus on CI/CD, automated testing, and cloud-native deployment.  
+- **IBM Data Engineering Certification Capstone** – Focus on **data pipelines, ETL workflows, and analytics**.  
+- **IBM AI Engineering Certification Capstone** – Build and deploy **AI/ML models** in a cloud-native environment.  
 
-    ```bash
-    node -v
-    ```
+> Projects will be added here as they are completed and deployed.  
 
-2. In the project directory, install dependencies:
+---
 
-    ```bash
-    npm install
-    ```
+## Technologies & Tools
 
-3. Start the development server:
+- **Languages:** Python, TypeScript, SQL, JavaScript  
+- **Frameworks & Libraries:** React, MUI, Sass, FontAwesome  
+- **DevOps / Deployment:** GitHub Pages, Docker, CI/CD pipelines  
+- **Other:** AI/ML experimentation, Robotics simulations, Automation testing
 
-    ```bash
-    npm start
-    ```
+---
 
-4. Open [http://localhost:3000](http://localhost:3000) to view the app in the browser.
+## Connect With Me
 
-5. Customize the template by navigating to the `/src/components` directory. Modify texts, pictures, and other information as needed.
+- GitHub: [https://github.com/MonicaCheely](https://github.com/MonicaCheely)  
+- Portfolio (Live): [https://MonicaCheely.github.io/monicacheely-portfolio/](https://MonicaCheely.github.io/monicacheely-portfolio/)
 
-The page will reload if you make edits, and you will see any lint errors in the console.
+---
 
-If you are interested in creating a mockup image like the ones from the personal projects section, I recommend [Genmoo](https://gemoo.com/tools/browser-mockup-generator/). This website lets you generate sleek looking browser mockups for free.
-
-## Deployment
-
-You can choose your preferred service (e.g., [Netlify](https://www.netlify.com/), [Render](https://render.com/), [Heroku](https://www.heroku.com/)) for deployment. One of the easiest ways to host this portfolio is using GitHub Pages. Follow the instructions below for a production deploy.
-
-1. **Set Up GitHub Repository**
-
-    Create a new repository on GitHub for your portfolio app.
-
-2. **Configure `package.json`**
-
-    Edit the following properties in your `package.json` file:
-
-    ```json
-    {
-        "homepage": "https://yourusername.github.io/your-repo-name",
-        "scripts": {
-            "predeploy": "npm run build",
-            "deploy": "gh-pages -d build",
-            ...
-        }
-    }
-    ```
-
-    Replace `yourusername` with your GitHub username and `your-repo-name` with the name of your GitHub repository.
-
-3. **Deploy to GitHub Pages**
-
-    Run the following command to deploy your app:
-
-    ```bash
-    npm run deploy
-    ```
-
-4. **Access Your Deployed App**
-
-    After successfully deploying, you can access your app at `https://yourusername.github.io/your-repo-name`.
+*This portfolio is maintained and deployed via GitHub Pages. All code is available here in this repository.*
