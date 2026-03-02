@@ -1,31 +1,44 @@
-.contact_wrapper svg {
-  font-size: 1em;
-  vertical-align: middle;
-  margin-right: 5px;
+.contact_wrapper {
+  padding: 5% 10%;
+  color: #fff;
+
+  h1 {
+    margin-bottom: 10px;
+  }
+
+  p {
+    margin-bottom: 20px;
+    color: #ddd;
+  }
+
+  svg {
+    vertical-align: middle;
+    margin-right: 5px;
+  }
 }
 
 .contact-form {
   padding-top: 20px;
 
-  button {
-    float: right;
+  .MuiFormControl-root {
     background-color: white;
-    color: #050f0b;
+    border-radius: 5px;
   }
 
-  button:hover {
+  .MuiInputBase-input {
+    color: #000; // <--- fixes the invisible text
+  }
+
+  button {
+    float: right;
     background-color: #5000ca;
     color: white;
   }
 
-  fieldset {
+  button:hover {
     background-color: white;
+    color: #5000ca;
   }
-}
-
-label {
-  font-size: 1.2rem;
-  font-family: 'DomaineDispNar-Medium', sans-serif;
 }
 
 .form-flex {
@@ -34,15 +47,8 @@ label {
   padding-bottom: 15px;
 }
 
-.form-flex .MuiFormControl-root {
-  width: 100%;
-}
-
-form {
-  width: 100% !important;
-}
-
-.body-form {
-  width: 100% !important;
-  margin-bottom: 15px !important;
+.success-msg {
+  margin-top: 15px;
+  color: limegreen;
+  font-weight: bold;
 }
