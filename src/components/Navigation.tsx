@@ -18,7 +18,7 @@ import Toolbar from '@mui/material/Toolbar';
 
 const drawerWidth = 240;
 const navItems = [
-  ['Skills', 'expertise'],    // label changed to Skills, keep the id if your section id is still 'expertise'
+  ['Skills', 'skills'],    // updated section id matches the Skills component
   ['Experience', 'experience'],
   ['Projects', 'projects'],
   ['Contact', 'contact']
@@ -51,13 +51,13 @@ function Navigation({parentToChild, modeChange}: any) {
   }, []);
 
   const scrollToSection = (section: string) => {
-    console.log(section)
-    const expertiseElement = document.getElementById(section);
-    if (expertiseElement) {
-      expertiseElement.scrollIntoView({ behavior: 'smooth' });
-      console.log('Scrolling to:', expertiseElement);  // Debugging: Ensure the element is found
+    console.log('Requested scroll to:', section);
+    const targetElement = document.getElementById(section);
+    if (targetElement) {
+      targetElement.scrollIntoView({ behavior: 'smooth' });
+      console.log('Scrolling to element with id:', section, targetElement);
     } else {
-      console.error('Element with id "expertise" not found');  // Debugging: Log error if element is not found
+      console.error(`Element with id "${section}" not found`);
     }
   };
 
