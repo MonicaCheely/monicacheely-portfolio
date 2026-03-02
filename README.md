@@ -3,7 +3,7 @@
 Welcome to my personal portfolio! This site showcases my projects, skills, and experience in software testing, cloud-native DevOps, AI/ML, robotics, and full-stack development.
 
 **Live site:** [https://MonicaCheely.github.io/monicacheely-portfolio/](https://MonicaCheely.github.io/monicacheely-portfolio/)
-![Portfolio Homepage](https://github.com/MonicaCheely/monicacheely-portfolio/raw/main/ghportfolio01.png)
+![Portfolio Homepage](https://github.com/MonicaCheely/monicacheely-portfolio/blob/main/ghportfolio02.png)
 
 ---
 
