@@ -15,7 +15,7 @@ type ProjectItem = {
 function Project() {
   const projects: ProjectItem[] = [
     {
-      title: "Duckiebot Autonomous Cloud-Native CI/CD Pipeline Project (Planning Stage)",
+      title: "Duckiebot Autonomous Cloud-Native CI/CD Pipeline",
       description:
         "Will design and implement cloud-native CI/CD pipelines for data ingestion, ETL transformation, and ML model training, automating validation and deployment of AI/ML components using simulated telemetry data.",
       image: duckiebot,
