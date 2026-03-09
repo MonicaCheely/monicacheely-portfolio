@@ -1,100 +1,106 @@
 import React from "react";
-import '@fortawesome/free-regular-svg-icons';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faDocker, faPython, faReact } from '@fortawesome/free-brands-svg-icons';
-import Chip from '@mui/material/Chip';
-import '../assets/styles/Skills.scss';
+import "../assets/styles/Skills.scss";
 
 const devOpsStack = [
   "Git",
   "GitHub",
   "CI/CD Pipelines",
   "Docker",
-  "Kubernetes (Foundations)",
-  "AWS Fundamentals",
+  "Kubernetes",
+  "AWS Cloud",
+  "Infrastructure as Code",
   "Azure DevOps",
-  "Agile / Scrum",
-  "Linux Basics"
+  "Linux / Bash",
+  "Agile / Scrum"
 ];
 
 const dataEngineeringStack = [
   "Python",
   "SQL",
   "PostgreSQL",
-  "ETL Processes",
+  "ETL Pipelines",
   "Data Cleaning",
   "Data Transformation",
   "Pandas",
   "NumPy",
-  "Data Warehousing Concepts"
+  "Data Warehousing",
+  "Data Quality Validation"
 ];
 
 const aiEngineeringStack = [
-  "Machine Learning Fundamentals",
+  "Machine Learning",
   "Supervised Learning",
   "Unsupervised Learning",
   "Model Evaluation",
   "Scikit-Learn",
-  "OpenAI API",
+  "Neural Networks",
+  "Natural Language Processing",
   "Hugging Face",
-  "Model Deployment Concepts"
+  "Model Deployment"
+];
+
+const qaAutomationStack = [
+  "Automated Testing",
+  "Manual Testing",
+  "User Acceptance Testing",
+  "Test Case Development",
+  "SAP Fiori Testing",
+  "Worksoft Certify",
+  "Software Development Life Cycle",
+  "Integration Testing",
+  "Debugging"
 ];
 
 function Skills() {
   return (
-    <div className="container" id="skills">
-      <div className="skills-container">
-        <h1>Skills & Certifications</h1>
-        <div className="skills-grid">
+    <div id="skills" className="skills-container content-wrapper">
+      {/* Tech Stacks */}
+      <h2>DevOps Stack</h2>
+      <div className="tech-stacks">
+        {devOpsStack.map((tech) => (
+          <div className="stack-chip" key={tech}>{tech}</div>
+        ))}
+      </div>
 
-          {/* IBM DevOps */}
-          <div className="skill">
-            <FontAwesomeIcon icon={faDocker} size="3x"/>
-            <h3>IBM DevOps Certification</h3>
-            <p>
-              Hands-on experience building CI/CD pipelines, containerizing 
-              applications, and applying DevOps best practices through IBM 
-              certification labs and deployment exercises.
-            </p>
-            <div className="flex-chips">
-              {devOpsStack.map((label, index) => (
-                <Chip key={index} className='chip' label={label} />
-              ))}
-            </div>
-          </div>
+      <h2>Data Engineering Stack</h2>
+      <div className="tech-stacks">
+        {dataEngineeringStack.map((tech) => (
+          <div className="stack-chip" key={tech}>{tech}</div>
+        ))}
+      </div>
 
-          {/* IBM Data Engineering */}
-          <div className="skill">
-            <FontAwesomeIcon icon={faPython} size="3x"/>
-            <h3>IBM Data Engineering Certification</h3>
-            <p>
-              Designed and implemented ETL pipelines, structured relational 
-              datasets, and prepared data for analytics and AI model training 
-              in certification projects.
-            </p>
-            <div className="flex-chips">
-              {dataEngineeringStack.map((label, index) => (
-                <Chip key={index} className='chip' label={label} />
-              ))}
-            </div>
-          </div>
+      <h2>AI Engineering Stack</h2>
+      <div className="tech-stacks">
+        {aiEngineeringStack.map((tech) => (
+          <div className="stack-chip" key={tech}>{tech}</div>
+        ))}
+      </div>
 
-          {/* IBM AI Engineering */}
-          <div className="skill">
-            <FontAwesomeIcon icon={faReact} size="3x"/>
-            <h3>IBM AI Engineering Certification</h3>
-            <p>
-              Applied machine learning techniques to real-world problem 
-              scenarios, focusing on model training, evaluation, and deployment 
-              strategies for intelligent systems.
-            </p>
-            <div className="flex-chips">
-              {aiEngineeringStack.map((label, index) => (
-                <Chip key={index} className='chip' label={label} />
-              ))}
-            </div>
-          </div>
+      <h2>QA / Automation Stack</h2>
+      <div className="tech-stacks">
+        {qaAutomationStack.map((tech) => (
+          <div className="stack-chip" key={tech}>{tech}</div>
+        ))}
+      </div>
 
+      {/* Certifications */}
+      <h2>Certifications</h2>
+      <div className="certifications">
+        <div className="cert">
+          <span>IBM AI Engineering Certificate</span>
+          <span className="in-progress">In Progress</span>
+        </div>
+        <div className="cert">
+          <span>IBM DevOps Certificate</span>
+          <span className="in-progress">In Progress</span>
+        </div>
+        <div className="cert">
+          <span>IBM Data Engineering Certificate</span>
+          <span className="in-progress">In Progress</span>
+        </div>
+        <div className="cert">
+          <span>AWS Certified Solutions Architect Professional</span>
+          <span className="in-progress">In Progress</span>
         </div>
       </div>
     </div>

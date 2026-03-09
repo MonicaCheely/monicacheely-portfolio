@@ -1,6 +1,6 @@
 import React from "react";
 import Navigation from "./components/Navigation";
-import Main from "./components/Main"; // ← this is your home page
+import Main from "./components/Main";
 import Timeline from "./components/Timeline";
 import Project from "./components/Project";
 import Skills from "./components/Skills";
@@ -10,10 +10,10 @@ import "./index.scss";
 
 function App() {
   return (
-    <div className="main-container">
+    <div className="App">
       <Navigation />
-      <Main /> {/* Home page */}
-      <Timeline /> {/* Experience/Timeline */}
+      <Main />
+      <Timeline />
       <Project />
       <Skills />
       <Contact />
