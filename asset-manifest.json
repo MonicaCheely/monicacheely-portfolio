@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/monicacheely-portfolio/static/css/main.958f47d4.css",
+    "main.css": "/monicacheely-portfolio/static/css/main.70567987.css",
     "main.js": "/monicacheely-portfolio/static/js/main.db9bd27f.js",
     "static/js/453.ef9f2c13.chunk.js": "/monicacheely-portfolio/static/js/453.ef9f2c13.chunk.js",
     "index.html": "/monicacheely-portfolio/index.html",
-    "main.958f47d4.css.map": "/monicacheely-portfolio/static/css/main.958f47d4.css.map",
+    "main.70567987.css.map": "/monicacheely-portfolio/static/css/main.70567987.css.map",
     "main.db9bd27f.js.map": "/monicacheely-portfolio/static/js/main.db9bd27f.js.map",
     "453.ef9f2c13.chunk.js.map": "/monicacheely-portfolio/static/js/453.ef9f2c13.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.958f47d4.css",
+    "static/css/main.70567987.css",
     "static/js/main.db9bd27f.js"
   ]
 }
