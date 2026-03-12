@@ -48,10 +48,6 @@ function Main() {
           </a>
         </div>
       </div>
-
-      <div className="image-wrapper">
-        <img src={require("../images/profile.png")} alt="Monica" />
-      </div>
     </section>
   );
 }
