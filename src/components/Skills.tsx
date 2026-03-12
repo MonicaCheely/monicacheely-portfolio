@@ -87,6 +87,10 @@ function Skills() {
       <h2>Certifications</h2>
       <div className="certifications">
         <div className="cert">
+          <span>IBM Data Science Certificate</span>
+          <span className="in-progress">In Progress</span>
+        </div>
+               <div className="cert">
           <span>IBM AI Engineering Certificate</span>
           <span className="in-progress">In Progress</span>
         </div>

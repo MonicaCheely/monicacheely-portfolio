@@ -1,13 +1,19 @@
 .navbar {
+  position: fixed;               // keeps navbar visible on scroll
+  top: 0;
+  right: 0;                      // anchor navbar to right
+  width: 100%;
   display: flex;
-  justify-content: flex-end;
-  background-color: rgba(0, 0, 0, 0.8);
-  padding: 10px 15%;
+  justify-content: flex-end;     // aligns nav links to the right
+  padding: 10px 5%;              // small horizontal padding for spacing
+  background-color: rgba(0, 0, 0, 0.7); // semi-transparent background
+  z-index: 999;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 
   .nav-links {
     display: flex;
     list-style: none;
-    gap: 20px;
+    gap: 30px;
 
     li {
       a {
@@ -15,6 +21,7 @@
         text-decoration: none;
         font-weight: 600;
         cursor: pointer;
+        transition: color 0.3s;
 
         &:hover {
           color: #f0c040;
@@ -28,10 +35,13 @@
 @media (max-width: 768px) {
   .navbar {
     justify-content: center;
+    padding-left: 0;
+    padding-right: 0;
 
     .nav-links {
       flex-direction: column;
-      gap: 10px;
+      gap: 15px;
+      align-items: center;
     }
   }
 }
