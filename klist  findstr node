@@ -1,0 +1,37 @@
+[33m7378ba5[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m)[m Fix timeline styling
+[33m6242160[m Update Skills and Certifications: dark grey boxes, side-by-side stacks, bubbles
+[33m9dd942c[m Finalize Skills, Certifications, Timeline styling
+[33m47210a2[m Update Skills and Certifications: dark grey boxes, white text, single row stacks
+[33mcc1e8f4[m Align 4 skill stacks in 1 row with smaller dark grey boxes
+[33m36bf3b3[m Update Skills and Certifications styling to dark grey with white text
+[33mc89cba5[m Update skills and certifications: dark grey boxes, white text, align stacks in one row
+[33mca45d03[m Update Skills and Certifications: dark grey boxes, white text, stack alignment, and bubble styling
+[33m64ce8a6[m Update skills section: black boxes, white text, dark grey bubbles, stacks side by side
+[33m7bab5cf[m Update Skills and Certifications: stack boxes white, categories black, timeline boxes white, text black
+[33mf886472[m Update Skills and Certifications styling: boxes white, categories black, stack boxes smaller
+[33m5d29587[m Set all Skills and Certification boxes to white with black text
+[33m2086255[m Update Skills section styling
+[33mbc29e4b[m Update timeline and skills styles
+[33mb2ac3d6[m Update Skills styles and certification layout
+[33m68d0bb5[m Update portfolio changes
+[33m85fe96d[m Update Skills and Timeline styling
+[33m2b5d243[m Update Skills page: unify box sizes, dark purple, separate status bubbles
+[33m3d2e2ef[m Update Skills and Certifications styling
+[33m0a5b86b[m Update Skills section: certifications, status colors, and layout
+[33mcda0c94[m Remove Back to Top link
+[33mf002582[m Remove Back to Top button from main page
+[33m5b64694[m Update navigation, main page, skills page, and styles
+[33mca275a8[m Update Main, Skills, and styles
+[33m8abb89f[m Updated Main.tsx, Skills.tsx, navigation, and styles
+[33ma288824[m Update projects: remove (Planning Stage) and add status tags
+[33maaa56a0[m Update projects with dynamic status tags
+[33m850da91[m Add CI/CD Dungeon Escape project with clickable image and title
+[33m5281484[m docs: update README and other portfolio changes
+[33maade9ca[m Update portfolio image link in README
+[33mb297f51[m Add files via upload
+[33m708384d[m Add portfolio homepage image to README
+[33m94105b8[m Add files via upload
+[33me366eb8[m docs: revise README for personal portfolio
+[33mbb18a58[m Final deploy: update portfolio
+[33m1ab9854[m Initial commit with project files
+[33mbd80356[m Initial commit

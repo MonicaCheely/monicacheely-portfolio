@@ -1,0 +1,37 @@
+.navbar {
+  display: flex;
+  justify-content: flex-end;
+  background-color: rgba(0, 0, 0, 0.8);
+  padding: 10px 15%;
+
+  .nav-links {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+
+    li {
+      a {
+        color: white;
+        text-decoration: none;
+        font-weight: 600;
+        cursor: pointer;
+
+        &:hover {
+          color: #f0c040;
+        }
+      }
+    }
+  }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .navbar {
+    justify-content: center;
+
+    .nav-links {
+      flex-direction: column;
+      gap: 10px;
+    }
+  }
+}

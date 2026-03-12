@@ -1,17 +1,39 @@
 import React from "react";
+import { Link } from "react-scroll";
+import "../assets/styles/Navigation.scss";
 
-function Navigation() {
+const Navigation = () => {
   return (
-    <nav className="navigation-bar">
-      <div className="nav-links">
-        <a href="#home">Home</a>
-        <a href="#experience">Experience</a>
-        <a href="#projects">Projects</a>
-        <a href="#skills">Skills</a>
-        <a href="#contact">Contact</a>
-      </div>
+    <nav className="navbar">
+      <ul className="nav-links">
+        <li>
+          <Link to="home" smooth={true} duration={500} offset={-70}>
+            HOME
+          </Link>
+        </li>
+        <li>
+          <Link to="experience" smooth={true} duration={500} offset={-70}>
+            EXPERIENCE
+          </Link>
+        </li>
+        <li>
+          <Link to="projects" smooth={true} duration={500} offset={-70}>
+            PROJECTS
+          </Link>
+        </li>
+        <li>
+          <Link to="skills" smooth={true} duration={500} offset={-70}>
+            SKILLS / CERTIFICATION
+          </Link>
+        </li>
+        <li>
+          <Link to="contact" smooth={true} duration={500} offset={-70}>
+            CONTACT
+          </Link>
+        </li>
+      </ul>
     </nav>
   );
-}
+};
 
 export default Navigation;
