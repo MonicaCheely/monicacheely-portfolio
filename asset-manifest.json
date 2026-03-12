@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/monicacheely-portfolio/static/css/main.70df84aa.css",
-    "main.js": "/monicacheely-portfolio/static/js/main.5e428744.js",
+    "main.css": "/monicacheely-portfolio/static/css/main.64c97814.css",
+    "main.js": "/monicacheely-portfolio/static/js/main.4eff0233.js",
     "static/media/thumbnail.png": "/monicacheely-portfolio/static/media/thumbnail.879d6d9a154db56455b1.png",
     "static/media/duck01.png": "/monicacheely-portfolio/static/media/duck01.03f6049dd2103beb455c.png",
     "static/media/bg-dark.png": "/monicacheely-portfolio/static/media/bg-dark.f420c6b8458af72de935.png",
     "index.html": "/monicacheely-portfolio/index.html",
-    "main.70df84aa.css.map": "/monicacheely-portfolio/static/css/main.70df84aa.css.map",
-    "main.5e428744.js.map": "/monicacheely-portfolio/static/js/main.5e428744.js.map"
+    "main.64c97814.css.map": "/monicacheely-portfolio/static/css/main.64c97814.css.map",
+    "main.4eff0233.js.map": "/monicacheely-portfolio/static/js/main.4eff0233.js.map"
   },
   "entrypoints": [
-    "static/css/main.70df84aa.css",
-    "static/js/main.5e428744.js"
+    "static/css/main.64c97814.css",
+    "static/js/main.4eff0233.js"
   ]
 }
