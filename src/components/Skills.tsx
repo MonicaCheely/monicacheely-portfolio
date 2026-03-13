@@ -103,7 +103,7 @@ function Skills() {
           <span className="in-progress">In Progress</span>
         </div>
         <div className="cert">
-          <span>AWS Certified Solutions Architect Professional</span>
+          <span>Microsoft Power BI Data Analyst Certificate</span>
           <span className="in-progress">In Progress</span>
         </div>
       </div>
