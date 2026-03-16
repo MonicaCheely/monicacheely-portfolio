@@ -79,6 +79,7 @@ function Project() {
       <div className="projects-grid">
         {projects.map((project, index) => (
           <div className="project" key={index}>
+            {/* Clickable image */}
             {project.link ? (
               <a href={project.link} target="_blank" rel="noopener noreferrer">
                 <img
@@ -97,6 +98,7 @@ function Project() {
               />
             )}
 
+            {/* Clickable title */}
             <h2>
               {project.link ? (
                 <a href={project.link} target="_blank" rel="noopener noreferrer">
