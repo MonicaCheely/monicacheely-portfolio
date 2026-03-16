@@ -3,8 +3,8 @@ import React from "react";
 import space01 from "../assets/images/space01.jpg"; // Galaxy Classification
 import space02 from "../assets/images/space02.jpg"; // Exoplanet Detection
 import space03 from "../assets/images/space03.jpg"; // Supernova Hunters
-import duckiebot from "../assets/images/duck01.png";
-import cdcdungeon from "../assets/images/thumbnail.png";
+import duckiebot from "../assets/images/duck01.png"; // Duckiebot
+import cdcdungeon from "../assets/images/thumbnail.png"; // CI/CD Dungeon
 
 import "../assets/styles/Project.scss";
 
@@ -24,6 +24,7 @@ function Project() {
         "Machine learning project analyzing galaxy images to classify galaxy morphology using astronomical datasets. Focuses on image preprocessing, feature extraction, and ML classification techniques.",
       image: space01,
       status: "In Progress",
+      link: "https://github.com/MonicaCheely/galaxy-classification",
     },
     {
       title: "Exoplanet Detection",
@@ -31,6 +32,7 @@ function Project() {
         "Machine learning project using light curve data to identify potential exoplanets through transit detection techniques and statistical modeling.",
       image: space02,
       status: "In Progress",
+      link: "https://github.com/MonicaCheely/exoplanet-detection",
     },
     {
       title: "Supernova Hunters",
@@ -38,6 +40,7 @@ function Project() {
         "Data science project analyzing astronomical observation data to detect potential supernova events. Uses pattern detection and data exploration techniques to identify transient celestial phenomena.",
       image: space03,
       status: "In Progress",
+      link: "https://github.com/MonicaCheely/supernova-hunters",
     },
     {
       title: "Duckiebot Autonomous Cloud-Native CI/CD Pipeline",
@@ -73,7 +76,6 @@ function Project() {
   return (
     <div className="projects-container" id="projects">
       <h1>Personal Projects</h1>
-
       <div className="projects-grid">
         {projects.map((project, index) => (
           <div className="project" key={index}>
@@ -82,7 +84,7 @@ function Project() {
                 <img
                   src={project.image}
                   className="zoom"
-                  alt={project.title}
+                  alt={`${project.title} Thumbnail`}
                   width="100%"
                 />
               </a>
@@ -90,7 +92,7 @@ function Project() {
               <img
                 src={project.image}
                 className="zoom"
-                alt={project.title}
+                alt={`${project.title} Thumbnail`}
                 width="100%"
               />
             )}
