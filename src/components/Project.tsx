@@ -1,19 +1,44 @@
 import React from "react";
+
+import space01 from "../assets/images/space01.jpg"; // Galaxy Classification
+import space02 from "../assets/images/space02.jpg"; // Exoplanet Detection
+import space03 from "../assets/images/space03.jpg"; // Supernova Hunters
 import duckiebot from "../assets/images/duck01.png";
 import cdcdungeon from "../assets/images/thumbnail.png";
+
 import "../assets/styles/Project.scss";
 
-// Define a TypeScript type for your project props
 type ProjectItem = {
   title: string;
   description: string;
   image: string;
   status: "Complete" | "In Progress" | "Not Started";
-  link?: string; // optional GitHub/project link
+  link?: string;
 };
 
 function Project() {
   const projects: ProjectItem[] = [
+    {
+      title: "Galaxy Classification",
+      description:
+        "Machine learning project analyzing galaxy images to classify galaxy morphology using astronomical datasets. Focuses on image preprocessing, feature extraction, and ML classification techniques.",
+      image: space01,
+      status: "In Progress",
+    },
+    {
+      title: "Exoplanet Detection",
+      description:
+        "Machine learning project using light curve data to identify potential exoplanets through transit detection techniques and statistical modeling.",
+      image: space02,
+      status: "In Progress",
+    },
+    {
+      title: "Supernova Hunters",
+      description:
+        "Data science project analyzing astronomical observation data to detect potential supernova events. Uses pattern detection and data exploration techniques to identify transient celestial phenomena.",
+      image: space03,
+      status: "In Progress",
+    },
     {
       title: "Duckiebot Autonomous Cloud-Native CI/CD Pipeline",
       description:
@@ -32,7 +57,6 @@ function Project() {
     },
   ];
 
-  // Helper to map status text to CSS class
   const statusClass = (status: string) => {
     switch (status) {
       case "Complete":
@@ -53,7 +77,6 @@ function Project() {
       <div className="projects-grid">
         {projects.map((project, index) => (
           <div className="project" key={index}>
-            {/* Image clickable if link exists */}
             {project.link ? (
               <a href={project.link} target="_blank" rel="noopener noreferrer">
                 <img
@@ -72,7 +95,6 @@ function Project() {
               />
             )}
 
-            {/* Title clickable if link exists */}
             <h2>
               {project.link ? (
                 <a href={project.link} target="_blank" rel="noopener noreferrer">
@@ -83,7 +105,6 @@ function Project() {
               )}
             </h2>
 
-            {/* Dynamic status tag */}
             <span className={`status-tag ${statusClass(project.status)}`}>
               {project.status}
             </span>
