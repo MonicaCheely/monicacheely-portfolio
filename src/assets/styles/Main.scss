@@ -3,46 +3,58 @@
   gap: 30px;
   justify-content: flex-start;
   align-items: center;
+
   width: 100%;
+  min-height: 100vh;
   padding: 0 15%;
-  min-height: 700px;
+
   background-image: url("../images/bg-dark.png");
   background-repeat: no-repeat;
   background-size: cover;
-  background-attachment: fixed;
   background-position: center;
+
+  /* Removed because it breaks mobile rendering */
+  /* background-attachment: fixed; */
 
   .content {
     text-align: left;
     z-index: 2;
+    max-width: 700px;
 
     h1 {
       font-size: 5em;
       margin: 0;
+      line-height: 1.1;
     }
 
     p {
       font-size: 1.5em;
-      margin: 0;
+      margin-top: 15px;
     }
 
     .social_icons {
       display: flex;
-      gap: 10px;
+      gap: 15px;
+      margin-top: 20px;
       color: white;
 
       svg {
-        font-size: 1.8em;
+        font-size: 2rem;
+        transition: transform 0.2s ease;
+      }
+
+      svg:hover {
+        transform: scale(1.2);
       }
     }
 
     .mobile_social_icons {
       display: none;
-      gap: 10px;
+      gap: 15px;
       color: white;
 
       svg {
-        font-size: 1.8em;
+        font-size: 2rem;
       }
     }
   }
@@ -55,20 +67,38 @@
   }
 }
 
+/* Theme backgrounds */
+
 .dark-mode .about-section {
+  background-image: url("../images/bg-dark.png");
+}
+
+.light-mode .about-section {
   background-image: url("../images/bg-light.png");
 }
 
-/* Responsive */
+/* ---------------- MOBILE ---------------- */
+
 @media (max-width: 768px) {
+
   .about-section {
     flex-direction: column;
-    padding: 150px 5% 5%;
+    justify-content: center;
+    text-align: center;
+
+    padding: 120px 20px 60px;
   }
 
   .about-section .content {
-    width: 90%;
-    text-align: center;
+    width: 100%;
+
+    h1 {
+      font-size: 2.8rem;
+    }
+
+    p {
+      font-size: 1.2rem;
+    }
 
     .social_icons {
       display: none;
@@ -77,11 +107,13 @@
     .mobile_social_icons {
       display: flex;
       justify-content: center;
+      margin-top: 25px;
     }
   }
 
   .about-section .image-wrapper {
     width: 100%;
-    padding-left: 0;
+    margin-top: 30px;
   }
+
 }

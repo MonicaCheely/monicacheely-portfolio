@@ -8,6 +8,7 @@ function Main() {
     <section id="home" className="about-section">
       <div className="content">
         <h1>Monica Cheely</h1>
+
         <p>
           Data QA Analyst | Automation Tester | Cloud-Native DevOps | AI/ML |
           Robotics | Python | SQL | Program Management | Cybersecurity
@@ -22,23 +23,6 @@ function Main() {
             <GitHubIcon fontSize="large" />
           </a>
 
-          <a
-            href="https://www.linkedin.com/in/monicacheely"
-            target="_blank"
-            rel="noreferrer"
-          >
-            <LinkedInIcon fontSize="large" />
-          </a>
-        </div>
-
-        <div className="mobile_social_icons">
-          <a
-            href="https://github.com/MonicaCheely"
-            target="_blank"
-            rel="noreferrer"
-          >
-            <GitHubIcon fontSize="large" />
-          </a>
           <a
             href="https://www.linkedin.com/in/monicacheely"
             target="_blank"
