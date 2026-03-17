@@ -4,13 +4,19 @@
   width: 100%;
   display: flex;
   flex-direction: column;
-  gap: 50px; /* more spacing between sections */
+  gap: 50px; /* spacing between sections */
   padding: 50px 0;
 
+  h1 {
+    font-size: 3rem; /* bigger Skills header */
+    margin-bottom: 30px;
+    text-align: center;
+  }
+
   h2 {
-    font-size: 2rem;
+    font-size: 2.5rem; /* bigger section headers */
     margin-bottom: 20px;
-    text-align: left; /* match README style */
+    text-align: left;
   }
 
   /* Tech stack chips */
@@ -25,7 +31,7 @@
       border-radius: 8px;
       font-weight: 500;
       box-shadow: 0px 2px 4px rgba(255, 255, 255, 0.1);
-      max-width: 200px; /* optional: prevent extremely long chips */
+      max-width: 200px;
       text-align: center;
     }
   }
@@ -34,38 +40,45 @@
   .certifications {
     display: flex;
     flex-direction: column;
-    gap: 20px; /* larger gap between certs */
+    gap: 20px;
 
     .cert {
       display: flex;
       justify-content: space-between;
       align-items: center;
-      padding: 20px 25px; /* bigger box for long text */
-      min-width: 100%; /* fill container */
+      padding: 20px 25px;
       background-color: rgba(255, 255, 255, 0.08);
       border-radius: 12px;
       font-weight: 500;
       box-shadow: 0px 3px 6px rgba(255, 255, 255, 0.15);
-      word-wrap: break-word; /* wrap long text */
       line-height: 1.4rem;
+      word-wrap: break-word;
 
-      /* In-progress badge */
+      a {
+        color: #fff; /* completed cert text white by default */
+        text-decoration: none;
+
+        &:hover {
+          color: #00d8ff; /* blue on hover */
+          text-decoration: underline;
+        }
+      }
+
       .in-progress {
         padding: 6px 12px;
         border-radius: 12px;
         font-size: 0.9rem;
         font-weight: 600;
-        color: #ffffff;
-        background-color: #f9a825; /* orange */
+        color: #fff;
+        background-color: #f9a825; /* yellow/orange */
       }
 
-      /* Completed badge (optional for future use) */
       .completed {
         padding: 6px 12px;
         border-radius: 12px;
         font-size: 0.9rem;
         font-weight: 600;
-        color: #ffffff;
+        color: #fff; /* white default */
         background-color: #4caf50; /* green */
       }
     }
@@ -75,7 +88,7 @@
 /* Responsive adjustments */
 @media screen and (max-width: 768px) {
   .tech-stacks {
-    justify-content: flex-start; /* left-align stacks on mobile */
+    justify-content: flex-start;
   }
 
   .certifications .cert {
@@ -85,7 +98,7 @@
 
     .in-progress,
     .completed {
-      margin-top: 10px; /* space below text */
+      margin-top: 10px;
     }
   }
 }

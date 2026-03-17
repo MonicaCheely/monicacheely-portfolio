@@ -54,7 +54,11 @@ const qaAutomationStack = [
 function Skills() {
   return (
     <div id="skills" className="skills-container content-wrapper">
-      {/* Tech Stacks */}
+
+      {/* Page Title */}
+      <h1>Skills</h1>
+
+      {/* DevOps */}
       <h2>DevOps Stack</h2>
       <div className="tech-stacks">
         {devOpsStack.map((tech) => (
@@ -62,6 +66,7 @@ function Skills() {
         ))}
       </div>
 
+      {/* Data Engineering */}
       <h2>Data Engineering Stack</h2>
       <div className="tech-stacks">
         {dataEngineeringStack.map((tech) => (
@@ -69,6 +74,7 @@ function Skills() {
         ))}
       </div>
 
+      {/* AI */}
       <h2>AI Engineering Stack</h2>
       <div className="tech-stacks">
         {aiEngineeringStack.map((tech) => (
@@ -76,6 +82,7 @@ function Skills() {
         ))}
       </div>
 
+      {/* QA */}
       <h2>QA / Automation Stack</h2>
       <div className="tech-stacks">
         {qaAutomationStack.map((tech) => (
@@ -85,27 +92,87 @@ function Skills() {
 
       {/* Certifications */}
       <h2>Certifications</h2>
+
       <div className="certifications">
+
+        {/* Completed Certifications */}
+        <div className="cert">
+          <a href="https://coursera.org/share/2993e1b013d6b07b29c7852b2122909d" target="_blank" rel="noopener noreferrer">
+            Google Project Management Professional Certificate
+          </a>
+          <span className="completed">Completed</span>
+        </div>
+
+        <div className="cert">
+          <a href="https://www.coursera.org/account/accomplishments/professional-cert/AKPKMEX4N97R" target="_blank" rel="noopener noreferrer">
+            Google Cybersecurity Professional Certificate
+          </a>
+          <span className="completed">Completed</span>
+        </div>
+
+        <div className="cert">
+          <a href="https://www.coursera.org/account/accomplishments/specialization/GLCW2BCL7PBB" target="_blank" rel="noopener noreferrer">
+            Scrum Master Certification
+          </a>
+          <span className="completed">Completed</span>
+        </div>
+
+        <div className="cert">
+          <a href="https://www.coursera.org/account/accomplishments/professional-cert/JVKZBGGRHSMW" target="_blank" rel="noopener noreferrer">
+            Google Data Analytics Professional Certificate
+          </a>
+          <span className="completed">Completed</span>
+        </div>
+
+        <div className="cert">
+          <a href="https://www.coursera.org/account/accomplishments/professional-cert/Q7SE9KGNFM4P" target="_blank" rel="noopener noreferrer">
+            IBM Cybersecurity Analyst Professional Certificate
+          </a>
+          <span className="completed">Completed</span>
+        </div>
+
+        {/* In Progress Certifications */}
+        <div className="cert">
+          <span>Learn SQL Basics for Data Science Specialization</span>
+          <span className="in-progress">In Progress</span>
+        </div>
+
         <div className="cert">
           <span>IBM Data Science Certificate</span>
           <span className="in-progress">In Progress</span>
         </div>
-               <div className="cert">
+
+        <div className="cert">
           <span>IBM AI Engineering Certificate</span>
           <span className="in-progress">In Progress</span>
         </div>
+
         <div className="cert">
           <span>IBM DevOps Certificate</span>
           <span className="in-progress">In Progress</span>
         </div>
+
         <div className="cert">
           <span>IBM Data Engineering Certificate</span>
           <span className="in-progress">In Progress</span>
         </div>
+
         <div className="cert">
           <span>Microsoft Power BI Data Analyst Certificate</span>
           <span className="in-progress">In Progress</span>
         </div>
+
+        {/* Last two In Progress Certifications */}
+        <div className="cert">
+          <span>Selenium Python Automation Testing & Frameworks Specialization</span>
+          <span className="in-progress">In Progress</span>
+        </div>
+
+        <div className="cert">
+          <span>ISTQB Foundation Level (CTFL)</span>
+          <span className="in-progress">In Progress</span>
+        </div>
+
       </div>
     </div>
   );
