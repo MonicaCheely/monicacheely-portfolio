@@ -13,9 +13,6 @@
   background-size: cover;
   background-position: center;
 
-  /* Removed because it breaks mobile rendering */
-  /* background-attachment: fixed; */
-
   .content {
     text-align: left;
     z-index: 2;
@@ -32,10 +29,10 @@
       margin-top: 15px;
     }
 
-    .social_icons {
+    .social_icons,
+    .mobile_social_icons {
       display: flex;
       gap: 15px;
-      margin-top: 20px;
       color: white;
 
       svg {
@@ -46,16 +43,38 @@
       svg:hover {
         transform: scale(1.2);
       }
+
+      a.resume-icon {
+        position: relative;
+        display: inline-flex;
+
+        .tooltiptext {
+          visibility: hidden;
+          width: 130px;
+          background-color: #333;
+          color: #fff;
+          text-align: center;
+          border-radius: 6px;
+          padding: 5px 0;
+          position: absolute;
+          z-index: 10;
+          bottom: 125%;
+          left: 50%;
+          transform: translateX(-50%);
+          opacity: 0;
+          transition: opacity 0.3s;
+          font-size: 0.9rem;
+        }
+
+        &:hover .tooltiptext {
+          visibility: visible;
+          opacity: 1;
+        }
+      }
     }
 
     .mobile_social_icons {
-      display: none;
-      gap: 15px;
-      color: white;
-
-      svg {
-        font-size: 2rem;
-      }
+      display: none; /* only for mobile */
     }
   }
 
@@ -68,7 +87,6 @@
 }
 
 /* Theme backgrounds */
-
 .dark-mode .about-section {
   background-image: url("../images/bg-dark.png");
 }
@@ -78,14 +96,11 @@
 }
 
 /* ---------------- MOBILE ---------------- */
-
 @media (max-width: 768px) {
-
   .about-section {
     flex-direction: column;
     justify-content: center;
     text-align: center;
-
     padding: 120px 20px 60px;
   }
 
@@ -115,5 +130,4 @@
     width: 100%;
     margin-top: 30px;
   }
-
 }

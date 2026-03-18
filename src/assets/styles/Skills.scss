@@ -36,50 +36,64 @@
     }
   }
 
-  /* Certifications list */
-  .certifications {
+  /* Certifications wrapper for side-by-side columns */
+  .certifications-wrapper {
     display: flex;
-    flex-direction: column;
-    gap: 20px;
+    gap: 2rem;
+    flex-wrap: wrap; /* stack columns on mobile */
+  }
 
-    .cert {
+  .certifications-column {
+    flex: 1;
+    min-width: 250px;
+
+    .certifications {
       display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding: 20px 25px;
-      background-color: rgba(255, 255, 255, 0.08);
-      border-radius: 12px;
-      font-weight: 500;
-      box-shadow: 0px 3px 6px rgba(255, 255, 255, 0.15);
-      line-height: 1.4rem;
-      word-wrap: break-word;
+      flex-direction: column;
+      gap: 20px;
 
-      a {
-        color: #fff; /* completed cert text white by default */
-        text-decoration: none;
+      .cert {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px 25px;
+        background-color: rgba(255, 255, 255, 0.08);
+        border-radius: 12px;
+        font-weight: 500;
+        box-shadow: 0px 3px 6px rgba(255, 255, 255, 0.15);
+        line-height: 1.4rem;
+        word-wrap: break-word;
 
-        &:hover {
-          color: #00d8ff; /* blue on hover */
-          text-decoration: underline;
+        a {
+          color: #fff; /* completed cert text white by default */
+          text-decoration: none;
+
+          &:hover {
+            color: #00d8ff; /* blue on hover */
+            text-decoration: underline;
+          }
         }
-      }
 
-      .in-progress {
-        padding: 6px 12px;
-        border-radius: 12px;
-        font-size: 0.9rem;
-        font-weight: 600;
-        color: #fff;
-        background-color: #f9a825; /* yellow/orange */
-      }
+        .in-progress,
+        .completed {
+          padding: 6px 12px;
+          border-radius: 12px;
+          font-size: 0.9rem;
+          font-weight: 600;
+          color: #fff;
+          text-align: center;
+          min-width: 120px;  /* consistent width */
+          max-width: 150px;  /* wrap longer text */
+          white-space: normal; /* allow wrapping for long text */
+        }
 
-      .completed {
-        padding: 6px 12px;
-        border-radius: 12px;
-        font-size: 0.9rem;
-        font-weight: 600;
-        color: #fff; /* white default */
-        background-color: #4caf50; /* green */
+        .in-progress {
+          background-color: #f9a825; /* yellow/orange */
+        }
+
+        .completed {
+          background-color: #4caf50; /* green */
+        }
       }
     }
   }
@@ -91,7 +105,12 @@
     justify-content: flex-start;
   }
 
-  .certifications .cert {
+  .certifications-wrapper {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .certifications-column .cert {
     flex-direction: column;
     align-items: flex-start;
     padding: 15px 20px;
@@ -99,6 +118,9 @@
     .in-progress,
     .completed {
       margin-top: 10px;
+      min-width: auto;
+      max-width: 100%;
+      padding: 6px 10px;
     }
   }
 }
