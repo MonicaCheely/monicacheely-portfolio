@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/monicacheely-portfolio/static/css/main.d81f4533.css",
-    "main.js": "/monicacheely-portfolio/static/js/main.f34da388.js",
+    "main.js": "/monicacheely-portfolio/static/js/main.e3a95af6.js",
     "static/js/453.27fb6024.chunk.js": "/monicacheely-portfolio/static/js/453.27fb6024.chunk.js",
     "static/media/thumbnail.png": "/monicacheely-portfolio/static/media/thumbnail.879d6d9a154db56455b1.png",
     "static/media/duck01.png": "/monicacheely-portfolio/static/media/duck01.03f6049dd2103beb455c.png",
@@ -12,11 +12,11 @@
     "static/media/space02.jpg": "/monicacheely-portfolio/static/media/space02.7eeddbe95cf0c67c5678.jpg",
     "index.html": "/monicacheely-portfolio/index.html",
     "main.d81f4533.css.map": "/monicacheely-portfolio/static/css/main.d81f4533.css.map",
-    "main.f34da388.js.map": "/monicacheely-portfolio/static/js/main.f34da388.js.map",
+    "main.e3a95af6.js.map": "/monicacheely-portfolio/static/js/main.e3a95af6.js.map",
     "453.27fb6024.chunk.js.map": "/monicacheely-portfolio/static/js/453.27fb6024.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.d81f4533.css",
-    "static/js/main.f34da388.js"
+    "static/js/main.e3a95af6.js"
   ]
 }
