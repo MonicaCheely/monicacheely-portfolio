@@ -54,47 +54,61 @@ const qaAutomationStack = [
 function Skills() {
   return (
     <div id="skills" className="skills-container content-wrapper">
-
+      
       {/* Page Title */}
       <h1>Skills</h1>
 
-      {/* DevOps */}
-      <h2>DevOps Stack</h2>
-      <div className="tech-stacks">
-        {devOpsStack.map((tech) => (
-          <div className="stack-chip" key={tech}>{tech}</div>
-        ))}
+      {/* ✅ NEW GRID WRAPPER */}
+      <div className="stacks-grid">
+
+        {/* DevOps */}
+        <div className="stack-box">
+          <h2>DevOps Stack</h2>
+          <div className="tech-stacks">
+            {devOpsStack.map((tech) => (
+              <div className="stack-chip" key={tech}>{tech}</div>
+            ))}
+          </div>
+        </div>
+
+        {/* Data Engineering */}
+        <div className="stack-box">
+          <h2>Data Engineering Stack</h2>
+          <div className="tech-stacks">
+            {dataEngineeringStack.map((tech) => (
+              <div className="stack-chip" key={tech}>{tech}</div>
+            ))}
+          </div>
+        </div>
+
+        {/* AI */}
+        <div className="stack-box">
+          <h2>AI Engineering Stack</h2>
+          <div className="tech-stacks">
+            {aiEngineeringStack.map((tech) => (
+              <div className="stack-chip" key={tech}>{tech}</div>
+            ))}
+          </div>
+        </div>
+
+        {/* QA */}
+        <div className="stack-box">
+          <h2>QA / Automation Stack</h2>
+          <div className="tech-stacks">
+            {qaAutomationStack.map((tech) => (
+              <div className="stack-chip" key={tech}>{tech}</div>
+            ))}
+          </div>
+        </div>
+
       </div>
 
-      {/* Data Engineering */}
-      <h2>Data Engineering Stack</h2>
-      <div className="tech-stacks">
-        {dataEngineeringStack.map((tech) => (
-          <div className="stack-chip" key={tech}>{tech}</div>
-        ))}
-      </div>
-
-      {/* AI */}
-      <h2>AI Engineering Stack</h2>
-      <div className="tech-stacks">
-        {aiEngineeringStack.map((tech) => (
-          <div className="stack-chip" key={tech}>{tech}</div>
-        ))}
-      </div>
-
-      {/* QA */}
-      <h2>QA / Automation Stack</h2>
-      <div className="tech-stacks">
-        {qaAutomationStack.map((tech) => (
-          <div className="stack-chip" key={tech}>{tech}</div>
-        ))}
-      </div>
-
-      {/* Certifications */}
+      {/* Certifications (UNCHANGED) */}
       <h2>Certifications</h2>
-      <div className="certifications-wrapper">
 
-        {/* Completed Certifications */}
+      <div className="certifications-wrapper">
+        
+        {/* Completed */}
         <div className="certifications-column">
           <div className="certifications">
             <div className="cert">
@@ -134,7 +148,7 @@ function Skills() {
           </div>
         </div>
 
-        {/* In Progress Certifications */}
+        {/* In Progress */}
         <div className="certifications-column">
           <div className="certifications">
             <div className="cert">
@@ -180,6 +194,7 @@ function Skills() {
         </div>
 
       </div>
+
     </div>
   );
 }

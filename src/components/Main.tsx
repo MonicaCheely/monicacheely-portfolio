@@ -37,7 +37,7 @@ function Main() {
 
           {/* Resume Download with tooltip */}
           <a
-            href="/resume.pdf"
+            href={`${process.env.PUBLIC_URL}/resume.pdf`}
             download="Monica_Cheely_Resume.pdf"
             className="tooltip resume-icon"
           >
@@ -68,7 +68,7 @@ function Main() {
 
           {/* Resume Download with tooltip */}
           <a
-            href="/resume.pdf"
+            href={`${process.env.PUBLIC_URL}/resume.pdf`}
             download="Monica_Cheely_Resume.pdf"
             className="tooltip resume-icon"
           >
