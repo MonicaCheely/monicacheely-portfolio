@@ -58,7 +58,7 @@ function Skills() {
       {/* Page Title */}
       <h1>Skills</h1>
 
-      {/* ✅ NEW GRID WRAPPER */}
+      {/* Grid Wrapper */}
       <div className="stacks-grid">
 
         {/* DevOps */}
@@ -172,13 +172,14 @@ function Skills() {
               <span className="in-progress">In Progress</span>
             </div>
 
+            {/* Added per your request */}
             <div className="cert">
-              <span>Microsoft Certified: Power BI Data Analyst Associate</span>
+              <span>IBM AI Engineering Certificate</span>
               <span className="in-progress">In Progress</span>
             </div>
 
             <div className="cert">
-              <span>Salesforce Certified Tableau Desktop Foundations</span>
+              <span>IBM Machine Learning Certificate</span>
               <span className="in-progress">In Progress</span>
             </div>
 
