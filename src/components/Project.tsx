@@ -1,8 +1,5 @@
 import React from "react";
 
-import space01 from "../assets/images/space01.jpg"; // Galaxy Classification
-import space02 from "../assets/images/space02.jpg"; // Exoplanet Detection
-import space03 from "../assets/images/space03.jpg"; // Supernova Hunters
 import duckiebot from "../assets/images/duck01.png"; // Duckiebot
 import cdcdungeon from "../assets/images/thumbnail.png"; // CI/CD Dungeon
 
@@ -18,30 +15,6 @@ type ProjectItem = {
 
 function Project() {
   const projects: ProjectItem[] = [
-    {
-      title: "Galaxy Classification",
-      description:
-        "Machine learning project analyzing galaxy images to classify galaxy morphology using astronomical datasets. Focuses on image preprocessing, feature extraction, and ML classification techniques.",
-      image: space01,
-      status: "In Progress",
-      link: "https://github.com/MonicaCheely/galaxy-classification",
-    },
-    {
-      title: "Exoplanet Detection",
-      description:
-        "Machine learning project using light curve data to identify potential exoplanets through transit detection techniques and statistical modeling.",
-      image: space02,
-      status: "In Progress",
-      link: "https://github.com/MonicaCheely/exoplanet-detection",
-    },
-    {
-      title: "Supernova Hunters",
-      description:
-        "Data science project analyzing astronomical observation data to detect potential supernova events. Uses pattern detection and data exploration techniques to identify transient celestial phenomena.",
-      image: space03,
-      status: "In Progress",
-      link: "https://github.com/MonicaCheely/supernova-hunters",
-    },
     {
       title: "Duckiebot Autonomous Cloud-Native CI/CD Pipeline",
       description:
