@@ -103,7 +103,7 @@ function Skills() {
 
       </div>
 
-      {/* Certifications (UNCHANGED) */}
+      {/* Certifications */}
       <h2>Certifications</h2>
 
       <div className="certifications-wrapper">
@@ -148,28 +148,9 @@ function Skills() {
           </div>
         </div>
 
-        {/* In Progress */}
+        {/* In Progress — UPDATED */}
         <div className="certifications-column">
           <div className="certifications">
-            <div className="cert">
-              <span>Learn SQL Basics for Data Science Specialization</span>
-              <span className="in-progress">In Progress</span>
-            </div>
-
-            <div className="cert">
-              <span>IBM Data Science Certificate</span>
-              <span className="in-progress">In Progress</span>
-            </div>
-
-            <div className="cert">
-              <span>IBM AI Engineering Certificate</span>
-              <span className="in-progress">In Progress</span>
-            </div>
-
-            <div className="cert">
-              <span>IBM DevOps Certificate</span>
-              <span className="in-progress">In Progress</span>
-            </div>
 
             <div className="cert">
               <span>IBM Data Engineering Certificate</span>
@@ -177,19 +158,30 @@ function Skills() {
             </div>
 
             <div className="cert">
-              <span>Microsoft Power BI Developer and Architect Professional Certificate</span>
+              <span>AWS Certified Data Engineer - Associate</span>
               <span className="in-progress">In Progress</span>
             </div>
 
             <div className="cert">
-              <span>Selenium Python Automation Testing & Frameworks Specialization</span>
+              <span>AWS Certified Machine Learning Engineer - Associate</span>
               <span className="in-progress">In Progress</span>
             </div>
 
             <div className="cert">
-              <span>ISTQB Foundation Level (CTFL)</span>
+              <span>AWS Certified Solutions Architect - Associate</span>
               <span className="in-progress">In Progress</span>
             </div>
+
+            <div className="cert">
+              <span>Microsoft Certified: Power BI Data Analyst Associate</span>
+              <span className="in-progress">In Progress</span>
+            </div>
+
+            <div className="cert">
+              <span>Salesforce Certified Tableau Desktop Foundations</span>
+              <span className="in-progress">In Progress</span>
+            </div>
+
           </div>
         </div>
 
