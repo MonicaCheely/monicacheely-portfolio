@@ -7,7 +7,7 @@ const devOpsStack = [
   "CI/CD Pipelines",
   "Docker",
   "Kubernetes",
-  "AWS Cloud",
+  "Google Cloud",
   "Infrastructure as Code",
   "Azure DevOps",
   "Linux / Bash",
@@ -153,33 +153,27 @@ function Skills() {
           <div className="certifications">
 
             <div className="cert">
-              <span>IBM Data Engineering Certificate</span>
+              <span>Eyes on AI - Computer Vision Engineering Professional Certificate</span>
               <span className="in-progress">In Progress</span>
             </div>
 
             <div className="cert">
-              <span>AWS Certified Data Engineer - Associate</span>
+              <span>DeepLearning.AI TensorFlow Developer Professional Certificate</span>
               <span className="in-progress">In Progress</span>
             </div>
 
             <div className="cert">
-              <span>AWS Certified Machine Learning Engineer - Associate</span>
+              <span>IBM Data Engineering Professional Certificate</span>
               <span className="in-progress">In Progress</span>
             </div>
 
             <div className="cert">
-              <span>AWS Certified Solutions Architect - Associate</span>
-              <span className="in-progress">In Progress</span>
-            </div>
-
-            {/* Added per your request */}
-            <div className="cert">
-              <span>IBM AI Engineering Certificate</span>
+              <span>DeepLearning.AI Data Engineering Professional Certificate</span>
               <span className="in-progress">In Progress</span>
             </div>
 
             <div className="cert">
-              <span>IBM Machine Learning Certificate</span>
+              <span>Preparing for Google Cloud Certification: Cloud Data Engineer Professional Certificate</span>
               <span className="in-progress">In Progress</span>
             </div>
 
