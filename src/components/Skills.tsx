@@ -148,9 +148,14 @@ function Skills() {
           </div>
         </div>
 
-        {/* In Progress — UPDATED */}
+        {/* In Progress */}
         <div className="certifications-column">
           <div className="certifications">
+
+            <div className="cert">
+              <span>Python, Bash and SQL Essentials for Data Engineering Specialization</span>
+              <span className="in-progress">In Progress</span>
+            </div>
 
             <div className="cert">
               <span>Eyes on AI - Computer Vision Engineering Professional Certificate</span>
