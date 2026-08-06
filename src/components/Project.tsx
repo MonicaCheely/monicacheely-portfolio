@@ -1,8 +1,8 @@
 import React from "react";
 
+import astrovoice from "../assets/images/AstroVoice 1.png"; // AstroVoice AI
 import duckiebot from "../assets/images/duck01.png"; // Duckiebot
 import cdcdungeon from "../assets/images/thumbnail.png"; // CI/CD Dungeon
-import astrovoice from "../assets/images/AstroVoice 1.png"; // AstroVoice AI
 
 import "../assets/styles/Project.scss";
 
@@ -10,34 +10,34 @@ type ProjectItem = {
   title: string;
   description: string;
   image: string;
-  status: "Complete" | "In Progress" | "Not Started" | "Planning";
+  status: "Complete" | "In Progress" | "Planning" | "Not Started";
   link?: string;
 };
 
 function Project() {
   const projects: ProjectItem[] = [
     {
-      title: "Duckiebot Autonomous Cloud-Native CI/CD Pipeline",
+      title: "AstroVoice AI",
       description:
-        "Will design and implement cloud-native CI/CD pipelines for data ingestion, ETL transformation, and ML model training, automating validation and deployment of AI/ML components using simulated telemetry data.",
-      image: duckiebot,
+        "An AI-powered horoscope platform combining voice intelligence, machine learning, cloud databases, and user feedback analytics. Users can receive AI-powered horoscope readings, submit voice reflections, complete zodiac personality quizzes, and rate horoscope accuracy to help train future AI personalization and recommendation models.",
+      image: astrovoice,
       status: "In Progress",
-      link: "https://github.com/MonicaCheely/duckiebot-cloud-native-cicd-intelligence-pipeline",
+      link: "https://github.com/MonicaCheely/astrovoice-ai",
     },
 
     {
-      title: "AstroVoice AI",
+      title: "Duckiebot Autonomous Cloud-Native CI/CD Pipeline",
       description:
-        "An AI-powered horoscope platform combining voice intelligence, machine learning, cloud databases, and user feedback analytics. Users will receive horoscope readings, submit voice reflections, complete quizzes, and provide feedback to train future AI personalization models.",
-      image: astrovoice,
-      status: "Planning",
-      link: "https://github.com/MonicaCheely/astrovoice-ai",
+        "A robotics and MLOps project focused on building cloud-native CI/CD pipelines for autonomous robots. The project will automate data ingestion, ETL transformation, ML model training, testing, validation, and deployment using simulated telemetry data and cloud infrastructure.",
+      image: duckiebot,
+      status: "Not Started",
+      link: "https://github.com/MonicaCheely/duckiebot-cloud-native-cicd-intelligence-pipeline",
     },
 
     {
       title: "CI/CD Dungeon Escape",
       description:
-        "A Python-based dungeon crawler game that teaches CI/CD and DevOps concepts through 10 challenging stages. Includes hands-on exercises for learning deployment pipelines.",
+        "A Python-based dungeon crawler game that teaches CI/CD and DevOps concepts through 10 challenging stages. Includes hands-on exercises for learning deployment pipelines, automation, testing, and continuous integration principles.",
       image: cdcdungeon,
       status: "Complete",
       link: "https://github.com/MonicaCheely/cicd-dungeon-escape",
@@ -96,7 +96,7 @@ function Project() {
               )}
             </h2>
 
-            {/* Project Status */}
+            {/* Status */}
             <span className={`status-tag ${statusClass(project.status)}`}>
               {project.status}
             </span>
