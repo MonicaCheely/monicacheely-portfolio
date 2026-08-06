@@ -2,6 +2,7 @@ import React from "react";
 
 import duckiebot from "../assets/images/duck01.png"; // Duckiebot
 import cdcdungeon from "../assets/images/thumbnail.png"; // CI/CD Dungeon
+import astrovoice from "../assets/images/AstroVoice 1.png"; // AstroVoice AI
 
 import "../assets/styles/Project.scss";
 
@@ -9,7 +10,7 @@ type ProjectItem = {
   title: string;
   description: string;
   image: string;
-  status: "Complete" | "In Progress" | "Not Started";
+  status: "Complete" | "In Progress" | "Not Started" | "Planning";
   link?: string;
 };
 
@@ -23,6 +24,16 @@ function Project() {
       status: "In Progress",
       link: "https://github.com/MonicaCheely/duckiebot-cloud-native-cicd-intelligence-pipeline",
     },
+
+    {
+      title: "AstroVoice AI",
+      description:
+        "An AI-powered horoscope platform combining voice intelligence, machine learning, cloud databases, and user feedback analytics. Users will receive horoscope readings, submit voice reflections, complete quizzes, and provide feedback to train future AI personalization models.",
+      image: astrovoice,
+      status: "Planning",
+      link: "https://github.com/MonicaCheely/astrovoice-ai",
+    },
+
     {
       title: "CI/CD Dungeon Escape",
       description:
@@ -39,6 +50,8 @@ function Project() {
         return "green";
       case "In Progress":
         return "yellow";
+      case "Planning":
+        return "blue";
       case "Not Started":
         return "red";
       default:
@@ -49,6 +62,7 @@ function Project() {
   return (
     <div className="projects-container" id="projects">
       <h1>Personal Projects</h1>
+
       <div className="projects-grid">
         {projects.map((project, index) => (
           <div className="project" key={index}>
@@ -82,10 +96,12 @@ function Project() {
               )}
             </h2>
 
+            {/* Project Status */}
             <span className={`status-tag ${statusClass(project.status)}`}>
               {project.status}
             </span>
 
+            {/* Description */}
             <p>{project.description}</p>
           </div>
         ))}
