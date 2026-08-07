@@ -1,20 +1,20 @@
 {
   "files": {
     "main.css": "/monicacheely-portfolio/static/css/main.21ce2ed3.css",
-    "main.js": "/monicacheely-portfolio/static/js/main.5b0dc46f.js",
+    "main.js": "/monicacheely-portfolio/static/js/main.04ac31e3.js",
     "static/js/453.27fb6024.chunk.js": "/monicacheely-portfolio/static/js/453.27fb6024.chunk.js",
     "static/media/thumbnail.png": "/monicacheely-portfolio/static/media/thumbnail.879d6d9a154db56455b1.png",
     "static/media/duck01.png": "/monicacheely-portfolio/static/media/duck01.03f6049dd2103beb455c.png",
-    "static/media/AstroVoice 1.png": "/monicacheely-portfolio/static/media/AstroVoice 1.128119051ca6622d70a3.png",
+    "static/media/AstroVoice-v2.png": "/monicacheely-portfolio/static/media/AstroVoice-v2.128119051ca6622d70a3.png",
     "static/media/bg-light.png": "/monicacheely-portfolio/static/media/bg-light.bac0efb485244a522981.png",
     "static/media/bg-dark.png": "/monicacheely-portfolio/static/media/bg-dark.f420c6b8458af72de935.png",
     "index.html": "/monicacheely-portfolio/index.html",
     "main.21ce2ed3.css.map": "/monicacheely-portfolio/static/css/main.21ce2ed3.css.map",
-    "main.5b0dc46f.js.map": "/monicacheely-portfolio/static/js/main.5b0dc46f.js.map",
+    "main.04ac31e3.js.map": "/monicacheely-portfolio/static/js/main.04ac31e3.js.map",
     "453.27fb6024.chunk.js.map": "/monicacheely-portfolio/static/js/453.27fb6024.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.21ce2ed3.css",
-    "static/js/main.5b0dc46f.js"
+    "static/js/main.04ac31e3.js"
   ]
 }
