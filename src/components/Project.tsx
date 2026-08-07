@@ -19,7 +19,7 @@ function Project() {
     {
       title: "AstroVoice AI",
       description:
-        "An AI-powered cosmic podcast platform combining conversational AI, voice intelligence, and machine learning. Astro AI creates personalized horoscope and astronomy experiences through AI-hosted podcast conversations, voice interactions, user feedback analytics, and recommendation models."
+        "An AI-powered cosmic podcast platform combining conversational AI, voice intelligence, and machine learning. Astro AI creates personalized horoscope and astronomy experiences through AI-hosted podcast conversations, voice interactions, user feedback analytics, and recommendation models.",
       image: astrovoice,
       status: "In Progress",
       link: "https://github.com/MonicaCheely/astrovoice-ai",
