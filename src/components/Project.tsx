@@ -1,6 +1,6 @@
 import React from "react";
 
-import astrovoice from "../assets/images/AstroVoice 1.png"; // AstroVoice AI
+import astrovoice from "../assets/images/AstroVoice-v2.png"; // AstroVoice AI
 import duckiebot from "../assets/images/duck01.png"; // Duckiebot
 import cdcdungeon from "../assets/images/thumbnail.png"; // CI/CD Dungeon
 
@@ -66,42 +66,33 @@ function Project() {
       <div className="projects-grid">
         {projects.map((project, index) => (
           <div className="project" key={index}>
-            {/* Clickable image */}
-            {project.link ? (
-              <a href={project.link} target="_blank" rel="noopener noreferrer">
-                <img
-                  src={project.image}
-                  className="zoom"
-                  alt={`${project.title} Thumbnail`}
-                  width="100%"
-                />
-              </a>
-            ) : (
+            <a
+              href={project.link}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <img
                 src={project.image}
                 className="zoom"
                 alt={`${project.title} Thumbnail`}
                 width="100%"
               />
-            )}
+            </a>
 
-            {/* Clickable title */}
             <h2>
-              {project.link ? (
-                <a href={project.link} target="_blank" rel="noopener noreferrer">
-                  {project.title}
-                </a>
-              ) : (
-                project.title
-              )}
+              <a
+                href={project.link}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                {project.title}
+              </a>
             </h2>
 
-            {/* Status */}
             <span className={`status-tag ${statusClass(project.status)}`}>
               {project.status}
             </span>
 
-            {/* Description */}
             <p>{project.description}</p>
           </div>
         ))}
