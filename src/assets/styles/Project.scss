@@ -12,7 +12,7 @@
 
 .projects-grid {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);   /* wider cards */
+  grid-template-columns: repeat(2, 1fr);   /* ← WIDER CARDS = WIDER IMAGES */
   gap: 30px;
 }
 
@@ -21,12 +21,11 @@
   border-radius: 12px;
   overflow: hidden;
   padding: 15px;
-  min-height: 450px;            /* ← THIS makes the cards taller */
   transition: transform 0.25s ease, box-shadow 0.25s ease;
 
   img.zoom {
     width: 100%;
-    height: 180px;              /* slightly less zoomed */
+    height: 180px;        /* slightly less zoomed */
     object-fit: cover;
     border-radius: 10px;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -94,24 +93,21 @@
   }
 }
 
-/* ---------------- MOBILE ---------------- */
+/* ---------------- TABLET ---------------- */
 @media (max-width: 1024px) {
   .projects-grid {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(2, 1fr);  /* still 2 columns */
   }
 }
 
+/* ---------------- MOBILE ---------------- */
 @media (max-width: 768px) {
   .projects-grid {
-    grid-template-columns: 1fr;
-  }
-
-  .project {
-    min-height: 380px;          /* slightly shorter on mobile */
+    grid-template-columns: 1fr;             /* single column */
   }
 
   .project img.zoom {
-    height: 160px;
+    height: 160px;                          /* slightly less zoomed on mobile */
   }
 
   .projects-container {
