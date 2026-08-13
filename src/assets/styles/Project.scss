@@ -10,44 +10,35 @@
   }
 }
 
-/* Responsive Grid */
 .projects-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  grid-template-columns: repeat(3, 1fr);
   gap: 30px;
 }
 
-/* Project Card */
 .project {
   background-color: #1c1f2a;
   border-radius: 12px;
   overflow: hidden;
   padding: 15px;
   transition: transform 0.25s ease, box-shadow 0.25s ease;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
 
-  /* Restored image size — fully visible */
   img.zoom {
     width: 100%;
-    height: 200px;            /* original size restored */
-    object-fit: contain;      /* prevents cropping */
-    aspect-ratio: 16 / 9;     /* keeps shape consistent */
-    padding: 10px;
-    background-color: #0f111a;
+    height: 180px;        /* ← slightly less zoomed */
+    object-fit: cover;    /* keeps your original style */
     border-radius: 10px;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     cursor: pointer;
 
     &:hover {
-      transform: scale(1.03);
+      transform: scale(1.05);
       box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
     }
   }
 
   h2 {
-    font-size: 1.4rem;
+    font-size: 1.5rem;
     margin: 15px 0 5px;
 
     a {
@@ -94,7 +85,6 @@
     line-height: 1.4;
     margin: 10px 0 0;
     color: #ccc;
-    text-align: left;
   }
 
   &:hover {
@@ -103,39 +93,23 @@
   }
 }
 
-/* ---------------- TABLET ---------------- */
+/* ---------------- MOBILE ---------------- */
 @media (max-width: 1024px) {
-  .projects-container {
-    padding: 50px 6%;
-  }
-
-  .project img.zoom {
-    height: 180px;
+  .projects-grid {
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 
-/* ---------------- MOBILE ---------------- */
 @media (max-width: 768px) {
+  .projects-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .project img.zoom {
+    height: 160px;   /* ← slightly less zoomed on mobile */
+  }
+
   .projects-container {
     padding: 40px 5%;
-  }
-
-  .project img.zoom {
-    height: 160px;
-  }
-
-  h1 {
-    font-size: 2.2rem;
-  }
-}
-
-/* ---------------- SMALL MOBILE ---------------- */
-@media (max-width: 480px) {
-  .project img.zoom {
-    height: 140px;
-  }
-
-  h1 {
-    font-size: 2rem;
   }
 }
