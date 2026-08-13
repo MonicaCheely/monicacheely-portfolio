@@ -12,7 +12,7 @@
 
 .projects-grid {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);   /* ← WIDER CARDS = WIDER IMAGES */
+  grid-template-columns: repeat(2, 1fr);   /* wider cards */
   gap: 30px;
 }
 
@@ -20,12 +20,13 @@
   background-color: #1c1f2a;
   border-radius: 12px;
   overflow: hidden;
-  padding: 15px;
+  padding: 25px;                 /* ↑ more padding = taller card */
+  min-height: 420px;             /* ← NEW: makes the card taller */
   transition: transform 0.25s ease, box-shadow 0.25s ease;
 
   img.zoom {
     width: 100%;
-    height: 180px;        /* slightly less zoomed */
+    height: 180px;               /* slightly less zoomed */
     object-fit: cover;
     border-radius: 10px;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -39,8 +40,7 @@
 
   h2 {
     font-size: 1.5rem;
-    margin: 15px 0 5px;
-
+    margin: 20px 0 10px;         /* ↑ more spacing */
     a {
       color: #fff;
       text-decoration: none;
@@ -54,7 +54,7 @@
 
   .status-tag {
     display: inline-block;
-    margin-bottom: 10px;
+    margin-bottom: 12px;
     padding: 4px 12px;
     border-radius: 20px;
     font-size: 0.9rem;
@@ -82,8 +82,8 @@
 
   p {
     font-size: 0.95rem;
-    line-height: 1.4;
-    margin: 10px 0 0;
+    line-height: 1.5;            /* ↑ taller text spacing */
+    margin: 12px 0 0;
     color: #ccc;
   }
 
@@ -96,18 +96,22 @@
 /* ---------------- TABLET ---------------- */
 @media (max-width: 1024px) {
   .projects-grid {
-    grid-template-columns: repeat(2, 1fr);  /* still 2 columns */
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 
 /* ---------------- MOBILE ---------------- */
 @media (max-width: 768px) {
   .projects-grid {
-    grid-template-columns: 1fr;             /* single column */
+    grid-template-columns: 1fr;
+  }
+
+  .project {
+    min-height: 380px;           /* slightly shorter on mobile */
   }
 
   .project img.zoom {
-    height: 160px;                          /* slightly less zoomed on mobile */
+    height: 160px;
   }
 
   .projects-container {
