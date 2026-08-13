@@ -17,21 +17,21 @@ type ProjectItem = {
 function Project() {
   const projects: ProjectItem[] = [
     {
-      title: "AstroVoice AI",
-      description:
-        "An AI-powered cosmic podcast platform combining conversational AI, voice intelligence, and machine learning. Astro AI creates personalized horoscope and astronomy experiences through AI-hosted podcast conversations, voice interactions, user feedback analytics, and recommendation models.",
-      image: astrovoice,
-      status: "In Progress",
-      link: "https://github.com/MonicaCheely/astrovoice-ai",
-    },
-
-    {
       title: "Duckiebot Autonomous Cloud-Native CI/CD Pipeline",
       description:
         "A robotics and MLOps project focused on building cloud-native CI/CD pipelines for autonomous robots. The project will automate data ingestion, ETL transformation, ML model training, testing, validation, and deployment using simulated telemetry data and cloud infrastructure.",
       image: duckiebot,
-      status: "Not Started",
+      status: "In Progress",
       link: "https://github.com/MonicaCheely/duckiebot-cloud-native-cicd-intelligence-pipeline",
+    },
+
+    {
+      title: "AstroVoice AI",
+      description:
+        "An AI-powered cosmic podcast platform combining conversational AI, voice intelligence, and machine learning. Astro AI creates personalized horoscope and astronomy experiences through AI-hosted podcast conversations, voice interactions, user feedback analytics, and recommendation models.",
+      image: astrovoice,
+      status: "Not Started",
+      link: "https://github.com/MonicaCheely/astrovoice-ai",
     },
 
     {

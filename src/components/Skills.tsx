@@ -1,6 +1,40 @@
 import React from "react";
 import "../assets/styles/Skills.scss";
 
+/* ============================
+      NEW STACKS ADDED
+============================ */
+
+const roboticsEngineeringStack = [
+  "Robot Kinematics",
+  "Robot Dynamics",
+  "Motion Planning",
+  "PID Control",
+  "Differential Drive Robots",
+  "Computer Vision",
+  "Autonomous Navigation",
+  "Simulation (Webots)",
+  "ROS Fundamentals",
+  "Reinforcement Learning for Robotics"
+];
+
+const cloudEngineeringStack = [
+  "Google Cloud Platform (GCP)",
+  "Azure Cloud",
+  "Cloud Architecture",
+  "Cloud Networking",
+  "Cloud Storage",
+  "IAM & Security",
+  "Compute Engine / Azure VMs",
+  "Cloud Functions / Azure Functions",
+  "BigQuery",
+  "Azure Data Factory"
+];
+
+/* ============================
+      EXISTING STACKS
+============================ */
+
 const devOpsStack = [
   "Git",
   "GitHub",
@@ -51,6 +85,10 @@ const qaAutomationStack = [
   "Debugging"
 ];
 
+/* ============================
+      COMPONENT
+============================ */
+
 function Skills() {
   return (
     <div id="skills" className="skills-container content-wrapper">
@@ -60,6 +98,26 @@ function Skills() {
 
       {/* Grid Wrapper */}
       <div className="stacks-grid">
+
+        {/* Robotics Engineering */}
+        <div className="stack-box">
+          <h2>Robotics Engineering Stack</h2>
+          <div className="tech-stacks">
+            {roboticsEngineeringStack.map((tech) => (
+              <div className="stack-chip" key={tech}>{tech}</div>
+            ))}
+          </div>
+        </div>
+
+        {/* Cloud Engineering */}
+        <div className="stack-box">
+          <h2>Cloud Engineering Stack</h2>
+          <div className="tech-stacks">
+            {cloudEngineeringStack.map((tech) => (
+              <div className="stack-chip" key={tech}>{tech}</div>
+            ))}
+          </div>
+        </div>
 
         {/* DevOps */}
         <div className="stack-box">
@@ -81,7 +139,7 @@ function Skills() {
           </div>
         </div>
 
-        {/* AI */}
+        {/* AI Engineering */}
         <div className="stack-box">
           <h2>AI Engineering Stack</h2>
           <div className="tech-stacks">
@@ -91,7 +149,7 @@ function Skills() {
           </div>
         </div>
 
-        {/* QA */}
+        {/* QA / Automation */}
         <div className="stack-box">
           <h2>QA / Automation Stack</h2>
           <div className="tech-stacks">
@@ -111,6 +169,7 @@ function Skills() {
         {/* Completed */}
         <div className="certifications-column">
           <div className="certifications">
+
             <div className="cert">
               <a href="https://coursera.org/share/2993e1b013d6b07b29c7852b2122909d" target="_blank" rel="noopener noreferrer">
                 Google Project Management Professional Certificate
@@ -145,6 +204,7 @@ function Skills() {
               </a>
               <span className="completed">Completed</span>
             </div>
+
           </div>
         </div>
 
@@ -153,32 +213,42 @@ function Skills() {
           <div className="certifications">
 
             <div className="cert">
+              <span>Modern Robotics Specialization — Northwestern</span>
+              <span className="in-progress">In Progress</span>
+            </div>
+
+            <div className="cert">
+              <span>Introduction to Robotics with Webots — Cyberbotics</span>
+              <span className="in-progress">In Progress</span>
+            </div>
+
+            <div className="cert">
+              <span>Control of Mobile Robots — Georgia Tech</span>
+              <span className="in-progress">In Progress</span>
+            </div>
+
+            <div className="cert">
+              <span>Computer Vision Specialization — University at Buffalo</span>
+              <span className="in-progress">In Progress</span>
+            </div>
+
+            <div className="cert">
+              <span>Deep Learning Specialization — Andrew Ng</span>
+              <span className="in-progress">In Progress</span>
+            </div>
+
+            <div className="cert">
+              <span>IBM AI Engineering Professional Certificate</span>
+              <span className="in-progress">In Progress</span>
+            </div>
+
+            <div className="cert">
+              <span>IBM AI Developer Professional Certificate</span>
+              <span className="in-progress">In Progress</span>
+            </div>
+
+            <div className="cert">
               <span>Python, Bash and SQL Essentials for Data Engineering Specialization</span>
-              <span className="in-progress">In Progress</span>
-            </div>
-
-            <div className="cert">
-              <span>Eyes on AI - Computer Vision Engineering Professional Certificate</span>
-              <span className="in-progress">In Progress</span>
-            </div>
-
-            <div className="cert">
-              <span>DeepLearning.AI TensorFlow Developer Professional Certificate</span>
-              <span className="in-progress">In Progress</span>
-            </div>
-
-            <div className="cert">
-              <span>IBM Data Engineering Professional Certificate</span>
-              <span className="in-progress">In Progress</span>
-            </div>
-
-            <div className="cert">
-              <span>DeepLearning.AI Data Engineering Professional Certificate</span>
-              <span className="in-progress">In Progress</span>
-            </div>
-
-            <div className="cert">
-              <span>Preparing for Google Cloud Certification: Cloud Data Engineer Professional Certificate</span>
               <span className="in-progress">In Progress</span>
             </div>
 
